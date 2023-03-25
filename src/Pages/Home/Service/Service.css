@@ -1,0 +1,26 @@
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+.singleservice-container{
+    border: 1px solid goldenrod ;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+}
+.services-title{
+    text-align: center;
+}
+
+/* responsive */
+@media only screen and (max-width:576px){
+    .service-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and(min-width:577px) and (max-width: 768px){
+    .service-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
